@@ -3,6 +3,10 @@ module davinci {
     requires javafx.fxml;
     requires json.simple;
 
-    opens davinci to javafx.fxml;
-    exports davinci;
+    opens davinci.controllers to javafx.fxml;
+    exports davinci.controllers;
+    opens davinci.library to javafx.fxml;
+    exports davinci.library;
+    opens davinci.model to javafx.fxml;
+    exports davinci.model;
 }

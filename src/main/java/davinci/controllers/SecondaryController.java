@@ -1,5 +1,6 @@
-package davinci;
+package davinci.controllers;
 
+import davinci.library.App;
 import java.io.IOException;
 import javafx.fxml.FXML;
 
