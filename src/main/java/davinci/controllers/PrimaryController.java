@@ -11,4 +11,9 @@ public class PrimaryController {
         App.setRoot("createaccount");
     }
 
+    @FXML
+    private void loginButtonClicked() throws IOException {
+        App.setRoot("studentScreen");
+    }
+
 }
