@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
-<?import java.net.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.PrimaryController">
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.PrimaryController">
    <children>
-      <Label text="Primary View" />
-      <Button fx:id="primaryButton" text="Switch to Secondary View" onAction="#switchToSecondary"/>
+      <Label fx:id="loginPageTitle" alignment="CENTER" contentDisplay="CENTER" prefHeight="51.0" prefWidth="450.0" text="DaVinci Academia">
+         <font>
+            <Font name="Goudy Old Style" size="49.0" />
+         </font></Label>
+      <TextField fx:id="usernameBox" maxWidth="200.0" promptText="username" />
+      <TextField fx:id="passwordBox" maxWidth="200.0" promptText="password" />
+      <Button fx:id="loginButton" onAction="#switchToSecondary" prefHeight="30.0" prefWidth="95.0" text="Login">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Button>
+      <Hyperlink fx:id="accountCreationPageLink" alignment="CENTER" onAction="#switchToSecondary" prefHeight="26.0" prefWidth="434.0" text="Dont have account? Click here to create one." textAlignment="CENTER" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
    </padding>
-   <stylesheets>
-      <URL value="@styles.css" />
-   </stylesheets>
 </VBox>
