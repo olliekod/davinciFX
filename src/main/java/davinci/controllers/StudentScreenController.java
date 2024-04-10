@@ -2,24 +2,21 @@ package davinci.controllers;
 
 import davinci.library.App;
 import davinci.model.User;
-
 import java.io.IOException;
-import java.util.concurrent.ExecutionException;
-
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class StudentScreenController {
+public class StudentScreenController implements Initializable {
 
     @FXML
     private Label testLabel;
-    
-    @FXML
-    public void initialize() throws IOException {
-        User u = App.user;
-        String name = u.getFirstName() + " " + u.getLastName();
-        testLabel.setText(name);
+        
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println("init");
     }
 
-    
 }
