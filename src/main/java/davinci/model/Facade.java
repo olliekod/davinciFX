@@ -9,6 +9,7 @@ import java.util.UUID;
 
 public class Facade {
     private User currentUser;
+    private Student currentStudent;
     private UserList users = UserList.getInstance();
     private CourseList courses = CourseList.getInstance();
     private MajorList majors = MajorList.getInstance();
@@ -32,12 +33,16 @@ public class Facade {
     public boolean login(String userName, String password) {
        if(users.getUser(userName, password) != null) {
            currentUser = users.getUser(userName, password);
+           currentStudent = users.getStudentByID(currentUser.getID());
            return true;
        } else {
             currentUser = null;
+            currentStudent = null;
             return false;
        }
     }
+
+    
 
     public Course addCourse(UUID id, int hours, String subject, int courseNumber, ArrayList<String> prereqs) {
         return null;
@@ -65,6 +70,11 @@ public class Facade {
     public User getCurrentUser() {
         return currentUser;
     }
+
+    public Student getCurrentStudent() {
+        return currentStudent;
+    }
+
 
     public void setCurrentUser(User u) {
         this.currentUser = u;

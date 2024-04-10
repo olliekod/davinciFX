@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 import davinci.model.User;
+import davinci.model.Student;
 
 /**
  * JavaFX App
@@ -18,6 +19,7 @@ public class App extends Application {
 
     private static Scene scene;
     public static User user = null;
+    public static Student student = null;
 
     @Override
     public void start(Stage stage) throws IOException {

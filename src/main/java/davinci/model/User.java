@@ -56,6 +56,10 @@ public class User {
         return this.id;
     }
 
+    public String getStudentID() {
+        return this.id.toString();
+    }
+
     public String getUsername() {
         return this.username;
     }

@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox alignment="CENTER" prefHeight="450.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.StudentScreenController">
    <children>
-      <Label id="testLabel" fx:id="testLabel" alignment="CENTER" prefHeight="239.0" prefWidth="434.0" text="this text should change">
+      <Label id="nameLabel" fx:id="nameLabel" prefHeight="32.0" prefWidth="283.0" text="Name">
          <font>
-            <Font size="37.0" />
+            <Font size="15.0" />
          </font>
+         <VBox.margin>
+            <Insets right="400.0" top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="StudentIDLabel" fx:id="StudentIDLabel" prefHeight="37.0" prefWidth="288.0" text="StudentID">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="400.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="GPALabel" fx:id="GPALabel" prefHeight="37.0" prefWidth="288.0" text="GPA">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="400.0" />
+         </VBox.margin>
+      </Label>
+      <Label id="MajorLabel" fx:id="MajorLabel" prefHeight="37.0" prefWidth="288.0" text="Major">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets right="400.0" />
+         </VBox.margin>
       </Label>
    </children>
 </VBox>

@@ -102,6 +102,10 @@ public class Student extends User{
         return this.GPA;
     }
 
+    public String getGPAString() {
+        return String.valueOf(this.GPA);
+    }
+
     public ArrayList<StudentCourse> getCourses() {
         return this.courses;
     }

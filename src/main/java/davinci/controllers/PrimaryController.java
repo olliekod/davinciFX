@@ -32,6 +32,7 @@ public class PrimaryController {
         Facade f = new Facade();
         if (f.login(username, password)) {
             App.user = f.getCurrentUser();
+            App.student = f.getCurrentStudent();
             App.setRoot("studentScreen");
         } else {
             System.out.println("login failed");
