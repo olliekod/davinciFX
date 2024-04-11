@@ -55,7 +55,9 @@ public class StudentScreenController implements Initializable {
         GPALabel.setText(GPA);
         MajorLabel.setText(major);
         StandingLabel.setText(standing);
-
+        for(Course course : s.displayEightSemesterPlan()) {
+            System.out.println(course.getTitle());
+        }
     }
 
     private void displayEightSemesterPlan(){
@@ -63,6 +65,7 @@ public class StudentScreenController implements Initializable {
 
         for(Course course : s.displayEightSemesterPlan()) {
             eightSemesterPlan.add(course.getTitle());
+            
         }
         eightSemesterPlanListView.setItems(eightSemesterPlan);
     }
