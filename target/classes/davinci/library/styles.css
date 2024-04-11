@@ -14,3 +14,7 @@
     -fx-background-color: #4CAF50;
     -fx-text-fill: white;
 }
+
+.custom-button:hover {
+    -fx-background-color:#469a49
+}
