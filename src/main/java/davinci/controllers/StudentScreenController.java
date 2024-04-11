@@ -36,7 +36,7 @@ public class StudentScreenController implements Initializable {
     private Label StandingLabel;
 
     @FXML
-    private ListView eightSemesterPlanListView;
+    private ListView EightSemesterPlanListView;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -49,22 +49,25 @@ public class StudentScreenController implements Initializable {
         String standing = "Standing: " + s.getStanding();
         
 
-        //displayEightSemesterPlan();
+        
         nameLabel.setText(usersName);
         StudentIDLabel.setText(studentID);
         GPALabel.setText(GPA);
         MajorLabel.setText(major);
         StandingLabel.setText(standing);
+        displayEightSemesterPlanListView();
 
     }
 
-    private void displayEightSemesterPlan(){
+    private void displayEightSemesterPlanListView(){
+        
         ObservableList<String> eightSemesterPlan = FXCollections.observableArrayList();
-
+        System.out.println("Size: " + eightSemesterPlan.size());
         for(Course course : s.displayEightSemesterPlan()) {
             eightSemesterPlan.add(course.getTitle());
         }
-        eightSemesterPlanListView.setItems(eightSemesterPlan);
+        //eightSemesterPlanListView = new ListView<String>(eightSemesterPlan);
+        EightSemesterPlanListView.setItems(eightSemesterPlan);
     }
 
 }
