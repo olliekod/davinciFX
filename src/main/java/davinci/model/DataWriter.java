@@ -185,8 +185,8 @@ public class DataWriter extends DataConstants {
         JSONArray majorClassJSON = new JSONArray();
         JSONArray majorElectJSON = new JSONArray();
 
-        JSONObject majorClassWithRec = new JSONObject();
-        JSONObject majorElecWithRec = new JSONObject();
+        
+        
 
         HashMap<Course, Integer> majorReqs = major.getMajorRequirements();
         HashMap<Course, Integer> majorElectiveReqs = major.getElectiveCourseReqs();
@@ -194,7 +194,7 @@ public class DataWriter extends DataConstants {
         for (HashMap.Entry<Course, Integer> entry : majorReqs.entrySet()) {
             Course targetCourse = entry.getKey();
             String recSemester = String.valueOf(entry.getValue());
-
+            JSONObject majorClassWithRec = new JSONObject();
             majorClassWithRec.put("courseName", targetCourse.getTitle() + String.valueOf(targetCourse.getCourseNumber()));  
             majorClassWithRec.put("courseID", String.valueOf(targetCourse.getID()));
             majorClassWithRec.put("reccomendedSemester", recSemester);
@@ -204,7 +204,7 @@ public class DataWriter extends DataConstants {
         for (HashMap.Entry<Course, Integer> entry : majorElectiveReqs.entrySet()) {
             Course targetCourse = entry.getKey();
             String recSemester = String.valueOf(entry.getValue());
-            
+            JSONObject majorElecWithRec = new JSONObject();
             majorElecWithRec.put("courseName", targetCourse.getTitle() + String.valueOf(targetCourse.getCourseNumber()));  
             majorElecWithRec.put("courseID", String.valueOf(targetCourse.getID()));
             majorElecWithRec.put("reccomendedSemester", recSemester); 
