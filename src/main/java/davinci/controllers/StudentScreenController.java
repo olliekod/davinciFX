@@ -65,6 +65,7 @@ public class StudentScreenController implements Initializable {
         System.out.println("Size: " + eightSemesterPlan.size());
         for(Course course : s.displayEightSemesterPlan()) {
             eightSemesterPlan.add(course.getTitle());
+            
         }
         //eightSemesterPlanListView = new ListView<String>(eightSemesterPlan);
         EightSemesterPlanListView.setItems(eightSemesterPlan);

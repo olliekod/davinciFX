@@ -1,1 +1,586 @@
-[{"hours":"3","courseNumber":"247","subject":"CSCE","id":"03e5935c-42c8-40d7-a9ae-1c4090bce58f","title":"Software Engineering","prereqs":"C<CSCE146&"},{"hours":"3","courseNumber":"0","subject":"","id":"598d16e8-d602-4cd7-bcd9-eb199ad348fa","title":"Carolina Core VSR","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"262ad912-8e6d-411e-818b-e4417b428a9b","title":"BIM Minor Elective","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"febe96e4-b98e-4379-8e18-acb1397ff1a9","title":"Liberal Arts Elective","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"b8ef19b5-58b8-4bae-a126-723b77df0532","title":"CSCE Major Elective","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"6884c146-329b-4798-a687-70c411f8aeac","title":"Application Area Elective","prereqs":""},{"hours":"4","courseNumber":"0","subject":"","id":"170d8de1-2c8d-4d81-975e-ab3b77b0409d","title":"Laboratory Science Elective","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"b168d1ac-3b7d-486d-9163-61bb02a3d5dc","title":"Carolina Core GFL","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"a2d09af4-1a87-4177-9233-c6fbfcfc2754","title":"Carolina Core GSS","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"c650a617-66da-4970-a8ec-b667aa450b1b","title":"Carolina Core GHS","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"b47a90a5-2770-42b0-9ce6-67cf4dc704aa","title":"Carolina Core AIU","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"49c4cd5b-4d0e-47b6-9607-3b3c98f42991","title":"Carolina Core SCI","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"de5bbdb3-d011-4512-a783-7c66232c08df","title":"Carolina Core CMS","prereqs":""},{"hours":"3","courseNumber":"240","subject":"CSCE","id":"fbe348d9-9e66-4da1-b714-d1950b37e402","title":"Advancing Programming Techniques","prereqs":"D<CSCE211&C<CSCE146&"},{"hours":"3","courseNumber":"101","subject":"ENGL","id":"1028df38-cdc6-4bbf-a7b3-abf1bf9b4b43","title":"Critical Reading and Composition","prereqs":""},{"hours":"4","courseNumber":"141","subject":"MATH","id":"cc74abf2-339a-4ac8-9c2b-7f9b79a4f233","title":"Calculus 1","prereqs":"C<MATH112\/MATH115\/MATH116&"},{"hours":"4","courseNumber":"145","subject":"CSCE","id":"d1433d4e-8c32-4edc-adba-348b5ddcc087","title":"Algorithmic Design I","prereqs":"C<MATH111\/MATH115&"},{"hours":"1","courseNumber":"101","subject":"UNIV","id":"a564f4ca-d8d0-40da-acf2-5251574ce770","title":"University 101","prereqs":""},{"hours":"3","courseNumber":"111","subject":"CHEM","id":"e2aed192-03ff-4494-bb44-1f9ed300ef6c","title":"General Chemistry I","prereqs":"C<MATH111\/MATH115\/MATH122\/MATH141\/PHYS211&"},{"hours":"3","courseNumber":"111","subject":"CHEML","id":"24d3c686-a139-42fa-b285-6d42d263e957","title":"General Chemistry I Lab","prereqs":"C<MATH111\/MATH115\/MATH122\/MATH141\/PHYS211&"},{"hours":"3","courseNumber":"112","subject":"CHEM","id":"c663c627-ea6f-4c85-8806-f9dec0199c03","title":"General Chemistry II","prereqs":"C<CHEM111\/CHEM111L\/CHEM141&"},{"hours":"3","courseNumber":"112","subject":"CHEM","id":"a01321d4-cba5-467d-86b1-938b7c03d37c","title":"General Chemistry II Lab","prereqs":"C<CHEM111\/CHEM111L\/CHEM141&MATH111\/MATH115\/MATH122\/MATH141&"},{"hours":"1","courseNumber":"190","subject":"CSCE","id":"04d4c585-3ff3-454c-b6bd-ddc2698a5640","title":"Computing in the Modern World","prereqs":"C<CSCE145\/CSCE204\/CSCE205\/CSCE206&"},{"hours":"3","courseNumber":"102","subject":"ENGL","id":"fe1fc2f9-1684-463c-8317-c23dbc72c4f7","title":"Rhetoric and Composition","prereqs":"C<ENGL101&"},{"hours":"3","courseNumber":"201","subject":"STAT","id":"3c94a085-ce35-4fe3-9138-3a30b3b79f78","title":"Introduction to Statistics","prereqs":"C<MATH111\/MATH112\/MATH115\/MATH116&"},{"hours":"4","courseNumber":"142","subject":"MATH","id":"c0d9833b-6686-41f6-88ac-b6395ba51560","title":"Calculus II","prereqs":"C<MATH141&"},{"hours":"4","courseNumber":"146","subject":"CSCE","id":"211f112f-9d26-4531-a9d5-106433e8f79b","title":"Algorithmic Design II","prereqs":"C<CSCE145&"},{"hours":"3","courseNumber":"374","subject":"MATH","id":"f40b2ed7-971a-4190-aaf8-98f0035bc5e2","title":"Discrete Structures","prereqs":"C<MATH142&"},{"hours":"1","courseNumber":"215","subject":"CSCE","id":"82bcab5c-8252-455e-b0e7-4f3864d827f5","title":"UNIX\/Linux Fundamentals","prereqs":"C<CSCE145&"},{"hours":"3","courseNumber":"211","subject":"CSCE","id":"ab2b65e5-1865-4cbc-a74e-d9ab47d66026","title":"Digital Logic Design","prereqs":"C<MATH141&"},{"hours":"3","courseNumber":"344","subject":"MATH","id":"0d593112-6bc5-4817-8509-14fc5efb1083","title":"Applied Linear Algebra","prereqs":"C<MATH142&"},{"hours":"3","courseNumber":"344","subject":"MATH","id":"a195cfb9-0fa1-4daf-adfb-5b032bc148d4","title":"Applied Linear Algebra Lab","prereqs":"C<MATH142&"},{"hours":"3","courseNumber":"212","subject":"CSCE","id":"077be7a4-d4f2-4f99-bf5d-618824b9bfe7","title":"Introduction to Computer Architecture","prereqs":"D<CSCE211&CSCE145\/CSCE206&"},{"hours":"3","courseNumber":"247","subject":"CSCE","id":"10fa13e6-f148-4495-a059-6642f5d952bb","title":"Software Engineering","prereqs":"C<CSCE146&"},{"hours":"3","courseNumber":"241","subject":"MATH","id":"8aab2d59-4815-463f-9406-444d42b8e62b","title":"Vector Calculus","prereqs":"C<MATH142&"},{"hours":"3","courseNumber":"311","subject":"CSCE","id":"da6d031b-70d9-4aeb-ab7f-73d25a088033","title":"Operating Systems","prereqs":"C<CSCE240&CSCE210\/MATH212&"},{"hours":"3","courseNumber":"330","subject":"CSCE","id":"12be9ba0-3156-4b39-bd3f-00849c5df3d1","title":"Programming Language Structures","prereqs":"C<CSCE240&MATH174\/MATH374\/MATH574&"},{"hours":"3","courseNumber":"350","subject":"CSCE","id":"06236ad6-a1ea-4bb2-b9e5-468e3b5acc51","title":"Data Structures & Algorithms","prereqs":"D<CSCE240&MATH174\/MATH374\/MATH574&MATH141\/MATH122&"},{"hours":"1","courseNumber":"390","subject":"CSCE","id":"cc64bfdf-44aa-4ef3-a0cf-acb2abcafa26","title":"Professional Issues in Computer Science Engineering","prereqs":""},{"hours":"3","courseNumber":"416","subject":"CSCE","id":"5a0303cc-c7a0-4cae-9400-848c17cc8a79","title":"Introduction to Computer Networks","prereqs":"C<CSCE146&"},{"hours":"3","courseNumber":"462","subject":"ENGL","id":"1b35f7ba-f1fa-4635-b66d-41b273e496e9","title":"Technical Writing","prereqs":"C<ENGL101&C<ENGL102&"},{"hours":"3","courseNumber":"463","subject":"ENGL","id":"97193686-41d0-4993-9fc7-a07b4617d32f","title":"Business Writing","prereqs":"C<ENGL101&C<ENGL102&"},{"hours":"3","courseNumber":"509","subject":"STAT","id":"0ee5dfd1-d4bd-46b5-a70d-c0c006a6ee7e","title":"Statistics for Engineers","prereqs":"C<MATH142&"},{"hours":"3","courseNumber":"490","subject":"CSCE","id":"7b7ad695-2ab2-4e7e-ad12-b07f8ad1e7c1","title":"Capstone Computing Project I","prereqs":"D<CSCE 240&CSCE 350&"},{"hours":"3","courseNumber":"355","subject":"CSCE","id":"cc8af1e8-11db-4e76-93f6-4b2407451b2b","title":"Foundations of Computation","prereqs":"C<CSCE211&CSCE212&CSCE350&"},{"hours":"3","courseNumber":"492","subject":"CSCE","id":"b16d1381-999b-4be9-81cf-d664f75b2521","title":"Capstone Computing Project II","prereqs":"D<CSCE240&CSCE350&CSCE490&"},{"hours":"3","courseNumber":"122","subject":"MATH","id":"3fe12e99-832c-4a5e-b771-33ec9b1b48e7","title":"Calc. for Bus Admin & Soc. Sci.","prereqs":"C<MATH111\/MATHI111&"},{"hours":"3","courseNumber":"210","subject":"CSCE","id":"00682ec9-d314-401c-ae1d-4d30c961d936","title":"Computer Hardware Foundations","prereqs":"C<CSCE145\/CSCE204\/CSCE205\/CSCE206\/CSCE207&"},{"hours":"3","courseNumber":"224","subject":"ECON","id":"083462b4-5d9e-4f2b-9327-507021c986cc","title":"Introduction to Economics","prereqs":""},{"hours":"3","courseNumber":"201","subject":"CSCE","id":"e021dd81-271e-48e5-9f41-27820d3f447a","title":"Introduction to Computer Security","prereqs":"C<CSCE101\/CSCE102\/CSCE145&"},{"hours":"3","courseNumber":"174","subject":"MATH","id":"3ae8576c-d061-4360-9064-2a5f4f9d196a","title":"Discrete Math. for Computer Sci.","prereqs":"C<MATH111\/MATH112\/MATH115\/MATH116&"},{"hours":"3","courseNumber":"222","subject":"ACCT","id":"7ac11741-b2f4-4252-b767-ac932ee3f99a","title":"Introduction to Accounting","prereqs":"C<MATH122\/MATH141&"},{"hours":"3","courseNumber":"371","subject":"MGMT","id":"3da944eb-985f-4076-9223-764ea62fec84","title":"Principles of Management","prereqs":""},{"hours":"3","courseNumber":"205","subject":"CSCE","id":"39fe0d2e-8345-46ef-b999-f332883caf41","title":"Buisness Applications Programming","prereqs":"C<MSGC290\/CSCE101&"},{"hours":"3","courseNumber":"515","subject":"STAT","id":"0a9429d3-c0eb-49bf-a90e-e0d82480fb23","title":"Statistical Methods I","prereqs":"C<MATH112\/MATH141&"},{"hours":"3","courseNumber":"520","subject":"CSCE","id":"196f4ae1-2974-4667-9c25-5acdc630e401","title":"Database System Design","prereqs":"C<CSCE240\/GEOG563&"},{"hours":"3","courseNumber":"516","subject":"STAT","id":"575ee062-552d-43ee-bb22-e62a2532a517","title":"Statistical Methods II","prereqs":"C<STAT515\/STAT509\/STAT512&"},{"hours":"3","courseNumber":"522","subject":"CSCE","id":"c2656f4b-a66f-4a7e-b1e3-569aa2b4d60a","title":"Information Security Principles","prereqs":"C<CSCE146&MATH174\/MATH374&"},{"hours":"3","courseNumber":"390","subject":"MGSC","id":"c6cd846f-a071-4135-8f57-b06b2eb84b8a","title":"Business Information Systems","prereqs":"C<MGSC290&"},{"hours":"3","courseNumber":"490","subject":"MGSC","id":"1a8cd589-1ee6-4fc9-ba20-083c9d3ba2fd","title":"Info. Systems Analysis & Design","prereqs":"C<MGSC298&MGSC390&"},{"hours":"3","courseNumber":"590","subject":"MGSC","id":"60de8570-7b19-461e-b222-87fd68fa2edd","title":"E-Commerce Concepts & Research Topics","prereqs":"C<MGSC390&"},{"hours":"3","courseNumber":"290","subject":"MGSC","id":"58513575-b937-4182-986d-de0b2c45b466","title":"Computer Information Systems in Business","prereqs":""},{"hours":"3","courseNumber":"111","subject":"MATHI","id":"eee63b42-898e-4e10-ba65-bde80f54d12c","title":"Intensive Basic College Mathematics","prereqs":""},{"hours":"3","courseNumber":"111","subject":"MATH","id":"06808788-4884-4cdc-972a-d06cda4df2d7","title":"Basic College Mathematics","prereqs":""},{"hours":"2","courseNumber":"112","subject":"MATH","id":"289d46a5-7c90-4884-bdb0-8e772843d619","title":"Trigonometry","prereqs":"C<MATHI111\/MATH111&"},{"hours":"4","courseNumber":"115","subject":"MATH","id":"94074a90-16ad-4bd6-aa64-91e60813f12a","title":"Precalculus Mathematics","prereqs":"C<MATHI111\/MATH111&"},{"hours":"2","courseNumber":"116","subject":"MATH","id":"09442542-18bb-4fa8-988b-faf830d62c2f","title":"Brief Precalculus Mathematics","prereqs":"C<MATH112\/MATH115&"},{"hours":"3","courseNumber":"140","subject":"SPCH","id":"2ea21702-a697-40da-a8a7-93688d0d570f","title":"Public Communication","prereqs":""},{"hours":"3","courseNumber":"109","subject":"FREN","id":"da661d49-dc7a-4cb5-bd48-d20669f250d2","title":"Beginning French I","prereqs":""},{"hours":"3","courseNumber":"109","subject":"SPAN","id":"c975e73b-1403-400b-9511-18f0dbcba798","title":"Beginning Spanish I","prereqs":""},{"hours":"3","courseNumber":"109","subject":"GERM","id":"41d8403b-8da8-43f6-9ad7-2afebf4702f8","title":"Beginning German I","prereqs":""},{"hours":"3","courseNumber":"121","subject":"ITAL","id":"405d8022-ed69-498e-a518-c420e20e72c6","title":"Elementary Italian","prereqs":""},{"hours":"3","courseNumber":"0","subject":"","id":"25d02b86-78bb-4aff-8cc3-cc70c4caa4aa","title":"Computer Information Systems Major Elective","prereqs":""}]
+[
+    {
+        "hours": "3",
+        "courseNumber": "247",
+        "subject": "CSCE",
+        "id": "03e5935c-42c8-40d7-a9ae-1c4090bce58f",
+        "title": "Software Engineering",
+        "prereqs": "C<CSCE146&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "598d16e8-d602-4cd7-bcd9-eb199ad348fa",
+        "title": "Carolina Core VSR",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "262ad912-8e6d-411e-818b-e4417b428a9b",
+        "title": "BIM Minor Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "febe96e4-b98e-4379-8e18-acb1397ff1a9",
+        "title": "Liberal Arts Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "b8ef19b5-58b8-4bae-a126-723b77df0532",
+        "title": "CSCE Major Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "6884c146-329b-4798-a687-70c411f8aeac",
+        "title": "Application Area Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "4",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "170d8de1-2c8d-4d81-975e-ab3b77b0409d",
+        "title": "Laboratory Science Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "b168d1ac-3b7d-486d-9163-61bb02a3d5dc",
+        "title": "Carolina Core GFL",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "a2d09af4-1a87-4177-9233-c6fbfcfc2754",
+        "title": "Carolina Core GSS",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "c650a617-66da-4970-a8ec-b667aa450b1b",
+        "title": "Carolina Core GHS",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "b47a90a5-2770-42b0-9ce6-67cf4dc704aa",
+        "title": "Carolina Core AIU",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "49c4cd5b-4d0e-47b6-9607-3b3c98f42991",
+        "title": "Carolina Core SCI",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "de5bbdb3-d011-4512-a783-7c66232c08df",
+        "title": "Carolina Core CMS",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "240",
+        "subject": "CSCE",
+        "id": "fbe348d9-9e66-4da1-b714-d1950b37e402",
+        "title": "Advancing Programming Techniques",
+        "prereqs": "D<CSCE211&C<CSCE146&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "101",
+        "subject": "ENGL",
+        "id": "1028df38-cdc6-4bbf-a7b3-abf1bf9b4b43",
+        "title": "Critical Reading and Composition",
+        "prereqs": ""
+    },
+    {
+        "hours": "4",
+        "courseNumber": "141",
+        "subject": "MATH",
+        "id": "cc74abf2-339a-4ac8-9c2b-7f9b79a4f233",
+        "title": "Calculus 1",
+        "prereqs": "C<MATH112\/MATH115\/MATH116&"
+    },
+    {
+        "hours": "4",
+        "courseNumber": "145",
+        "subject": "CSCE",
+        "id": "d1433d4e-8c32-4edc-adba-348b5ddcc087",
+        "title": "Algorithmic Design I",
+        "prereqs": "C<MATH111\/MATH115&"
+    },
+    {
+        "hours": "1",
+        "courseNumber": "101",
+        "subject": "UNIV",
+        "id": "a564f4ca-d8d0-40da-acf2-5251574ce770",
+        "title": "University 101",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "111",
+        "subject": "CHEM",
+        "id": "e2aed192-03ff-4494-bb44-1f9ed300ef6c",
+        "title": "General Chemistry I",
+        "prereqs": "C<MATH111\/MATH115\/MATH122\/MATH141\/PHYS211&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "111",
+        "subject": "CHEML",
+        "id": "24d3c686-a139-42fa-b285-6d42d263e957",
+        "title": "General Chemistry I Lab",
+        "prereqs": "C<MATH111\/MATH115\/MATH122\/MATH141\/PHYS211&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "112",
+        "subject": "CHEM",
+        "id": "c663c627-ea6f-4c85-8806-f9dec0199c03",
+        "title": "General Chemistry II",
+        "prereqs": "C<CHEM111\/CHEM111L\/CHEM141&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "112",
+        "subject": "CHEM",
+        "id": "a01321d4-cba5-467d-86b1-938b7c03d37c",
+        "title": "General Chemistry II Lab",
+        "prereqs": "C<CHEM111\/CHEM111L\/CHEM141&MATH111\/MATH115\/MATH122\/MATH141&"
+    },
+    {
+        "hours": "1",
+        "courseNumber": "190",
+        "subject": "CSCE",
+        "id": "04d4c585-3ff3-454c-b6bd-ddc2698a5640",
+        "title": "Computing in the Modern World",
+        "prereqs": "C<CSCE145\/CSCE204\/CSCE205\/CSCE206&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "102",
+        "subject": "ENGL",
+        "id": "fe1fc2f9-1684-463c-8317-c23dbc72c4f7",
+        "title": "Rhetoric and Composition",
+        "prereqs": "C<ENGL101&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "201",
+        "subject": "STAT",
+        "id": "3c94a085-ce35-4fe3-9138-3a30b3b79f78",
+        "title": "Introduction to Statistics",
+        "prereqs": "C<MATH111\/MATH112\/MATH115\/MATH116&"
+    },
+    {
+        "hours": "4",
+        "courseNumber": "142",
+        "subject": "MATH",
+        "id": "c0d9833b-6686-41f6-88ac-b6395ba51560",
+        "title": "Calculus II",
+        "prereqs": "C<MATH141&"
+    },
+    {
+        "hours": "4",
+        "courseNumber": "146",
+        "subject": "CSCE",
+        "id": "211f112f-9d26-4531-a9d5-106433e8f79b",
+        "title": "Algorithmic Design II",
+        "prereqs": "C<CSCE145&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "374",
+        "subject": "MATH",
+        "id": "f40b2ed7-971a-4190-aaf8-98f0035bc5e2",
+        "title": "Discrete Structures",
+        "prereqs": "C<MATH142&"
+    },
+    {
+        "hours": "1",
+        "courseNumber": "215",
+        "subject": "CSCE",
+        "id": "82bcab5c-8252-455e-b0e7-4f3864d827f5",
+        "title": "UNIX\/Linux Fundamentals",
+        "prereqs": "C<CSCE145&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "211",
+        "subject": "CSCE",
+        "id": "ab2b65e5-1865-4cbc-a74e-d9ab47d66026",
+        "title": "Digital Logic Design",
+        "prereqs": "C<MATH141&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "344",
+        "subject": "MATH",
+        "id": "0d593112-6bc5-4817-8509-14fc5efb1083",
+        "title": "Applied Linear Algebra",
+        "prereqs": "C<MATH142&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "344",
+        "subject": "MATH",
+        "id": "a195cfb9-0fa1-4daf-adfb-5b032bc148d4",
+        "title": "Applied Linear Algebra Lab",
+        "prereqs": "C<MATH142&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "212",
+        "subject": "CSCE",
+        "id": "077be7a4-d4f2-4f99-bf5d-618824b9bfe7",
+        "title": "Introduction to Computer Architecture",
+        "prereqs": "D<CSCE211&CSCE145\/CSCE206&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "247",
+        "subject": "CSCE",
+        "id": "10fa13e6-f148-4495-a059-6642f5d952bb",
+        "title": "Software Engineering",
+        "prereqs": "C<CSCE146&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "241",
+        "subject": "MATH",
+        "id": "8aab2d59-4815-463f-9406-444d42b8e62b",
+        "title": "Vector Calculus",
+        "prereqs": "C<MATH142&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "311",
+        "subject": "CSCE",
+        "id": "da6d031b-70d9-4aeb-ab7f-73d25a088033",
+        "title": "Operating Systems",
+        "prereqs": "C<CSCE240&CSCE210\/MATH212&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "330",
+        "subject": "CSCE",
+        "id": "12be9ba0-3156-4b39-bd3f-00849c5df3d1",
+        "title": "Programming Language Structures",
+        "prereqs": "C<CSCE240&MATH174\/MATH374\/MATH574&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "350",
+        "subject": "CSCE",
+        "id": "06236ad6-a1ea-4bb2-b9e5-468e3b5acc51",
+        "title": "Data Structures & Algorithms",
+        "prereqs": "D<CSCE240&MATH174\/MATH374\/MATH574&MATH141\/MATH122&"
+    },
+    {
+        "hours": "1",
+        "courseNumber": "390",
+        "subject": "CSCE",
+        "id": "cc64bfdf-44aa-4ef3-a0cf-acb2abcafa26",
+        "title": "Professional Issues in Computer Science Engineering",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "416",
+        "subject": "CSCE",
+        "id": "5a0303cc-c7a0-4cae-9400-848c17cc8a79",
+        "title": "Introduction to Computer Networks",
+        "prereqs": "C<CSCE146&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "462",
+        "subject": "ENGL",
+        "id": "1b35f7ba-f1fa-4635-b66d-41b273e496e9",
+        "title": "Technical Writing",
+        "prereqs": "C<ENGL101&C<ENGL102&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "463",
+        "subject": "ENGL",
+        "id": "97193686-41d0-4993-9fc7-a07b4617d32f",
+        "title": "Business Writing",
+        "prereqs": "C<ENGL101&C<ENGL102&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "509",
+        "subject": "STAT",
+        "id": "0ee5dfd1-d4bd-46b5-a70d-c0c006a6ee7e",
+        "title": "Statistics for Engineers",
+        "prereqs": "C<MATH142&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "490",
+        "subject": "CSCE",
+        "id": "7b7ad695-2ab2-4e7e-ad12-b07f8ad1e7c1",
+        "title": "Capstone Computing Project I",
+        "prereqs": "D<CSCE 240&CSCE 350&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "355",
+        "subject": "CSCE",
+        "id": "cc8af1e8-11db-4e76-93f6-4b2407451b2b",
+        "title": "Foundations of Computation",
+        "prereqs": "C<CSCE211&CSCE212&CSCE350&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "492",
+        "subject": "CSCE",
+        "id": "b16d1381-999b-4be9-81cf-d664f75b2521",
+        "title": "Capstone Computing Project II",
+        "prereqs": "D<CSCE240&CSCE350&CSCE490&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "122",
+        "subject": "MATH",
+        "id": "3fe12e99-832c-4a5e-b771-33ec9b1b48e7",
+        "title": "Calc. for Bus Admin & Soc. Sci.",
+        "prereqs": "C<MATH111\/MATHI111&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "210",
+        "subject": "CSCE",
+        "id": "00682ec9-d314-401c-ae1d-4d30c961d936",
+        "title": "Computer Hardware Foundations",
+        "prereqs": "C<CSCE145\/CSCE204\/CSCE205\/CSCE206\/CSCE207&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "224",
+        "subject": "ECON",
+        "id": "083462b4-5d9e-4f2b-9327-507021c986cc",
+        "title": "Introduction to Economics",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "201",
+        "subject": "CSCE",
+        "id": "e021dd81-271e-48e5-9f41-27820d3f447a",
+        "title": "Introduction to Computer Security",
+        "prereqs": "C<CSCE101\/CSCE102\/CSCE145&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "174",
+        "subject": "MATH",
+        "id": "3ae8576c-d061-4360-9064-2a5f4f9d196a",
+        "title": "Discrete Math. for Computer Sci.",
+        "prereqs": "C<MATH111\/MATH112\/MATH115\/MATH116&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "222",
+        "subject": "ACCT",
+        "id": "7ac11741-b2f4-4252-b767-ac932ee3f99a",
+        "title": "Introduction to Accounting",
+        "prereqs": "C<MATH122\/MATH141&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "371",
+        "subject": "MGMT",
+        "id": "3da944eb-985f-4076-9223-764ea62fec84",
+        "title": "Principles of Management",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "205",
+        "subject": "CSCE",
+        "id": "39fe0d2e-8345-46ef-b999-f332883caf41",
+        "title": "Buisness Applications Programming",
+        "prereqs": "C<MSGC290\/CSCE101&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "515",
+        "subject": "STAT",
+        "id": "0a9429d3-c0eb-49bf-a90e-e0d82480fb23",
+        "title": "Statistical Methods I",
+        "prereqs": "C<MATH112\/MATH141&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "520",
+        "subject": "CSCE",
+        "id": "196f4ae1-2974-4667-9c25-5acdc630e401",
+        "title": "Database System Design",
+        "prereqs": "C<CSCE240\/GEOG563&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "516",
+        "subject": "STAT",
+        "id": "575ee062-552d-43ee-bb22-e62a2532a517",
+        "title": "Statistical Methods II",
+        "prereqs": "C<STAT515\/STAT509\/STAT512&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "522",
+        "subject": "CSCE",
+        "id": "c2656f4b-a66f-4a7e-b1e3-569aa2b4d60a",
+        "title": "Information Security Principles",
+        "prereqs": "C<CSCE146&MATH174\/MATH374&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "390",
+        "subject": "MGSC",
+        "id": "c6cd846f-a071-4135-8f57-b06b2eb84b8a",
+        "title": "Business Information Systems",
+        "prereqs": "C<MGSC290&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "490",
+        "subject": "MGSC",
+        "id": "1a8cd589-1ee6-4fc9-ba20-083c9d3ba2fd",
+        "title": "Info. Systems Analysis & Design",
+        "prereqs": "C<MGSC298&MGSC390&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "590",
+        "subject": "MGSC",
+        "id": "60de8570-7b19-461e-b222-87fd68fa2edd",
+        "title": "E-Commerce Concepts & Research Topics",
+        "prereqs": "C<MGSC390&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "290",
+        "subject": "MGSC",
+        "id": "58513575-b937-4182-986d-de0b2c45b466",
+        "title": "Computer Information Systems in Business",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "111",
+        "subject": "MATHI",
+        "id": "eee63b42-898e-4e10-ba65-bde80f54d12c",
+        "title": "Intensive Basic College Mathematics",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "111",
+        "subject": "MATH",
+        "id": "06808788-4884-4cdc-972a-d06cda4df2d7",
+        "title": "Basic College Mathematics",
+        "prereqs": ""
+    },
+    {
+        "hours": "2",
+        "courseNumber": "112",
+        "subject": "MATH",
+        "id": "289d46a5-7c90-4884-bdb0-8e772843d619",
+        "title": "Trigonometry",
+        "prereqs": "C<MATHI111\/MATH111&"
+    },
+    {
+        "hours": "4",
+        "courseNumber": "115",
+        "subject": "MATH",
+        "id": "94074a90-16ad-4bd6-aa64-91e60813f12a",
+        "title": "Precalculus Mathematics",
+        "prereqs": "C<MATHI111\/MATH111&"
+    },
+    {
+        "hours": "2",
+        "courseNumber": "116",
+        "subject": "MATH",
+        "id": "09442542-18bb-4fa8-988b-faf830d62c2f",
+        "title": "Brief Precalculus Mathematics",
+        "prereqs": "C<MATH112\/MATH115&"
+    },
+    {
+        "hours": "3",
+        "courseNumber": "140",
+        "subject": "SPCH",
+        "id": "2ea21702-a697-40da-a8a7-93688d0d570f",
+        "title": "Public Communication",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "109",
+        "subject": "FREN",
+        "id": "da661d49-dc7a-4cb5-bd48-d20669f250d2",
+        "title": "Beginning French I",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "109",
+        "subject": "SPAN",
+        "id": "c975e73b-1403-400b-9511-18f0dbcba798",
+        "title": "Beginning Spanish I",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "109",
+        "subject": "GERM",
+        "id": "41d8403b-8da8-43f6-9ad7-2afebf4702f8",
+        "title": "Beginning German I",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "121",
+        "subject": "ITAL",
+        "id": "405d8022-ed69-498e-a518-c420e20e72c6",
+        "title": "Elementary Italian",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "25d02b86-78bb-4aff-8cc3-cc70c4caa4aa",
+        "title": "Computer Information Systems Major Elective",
+        "prereqs": ""
+    }
+]
