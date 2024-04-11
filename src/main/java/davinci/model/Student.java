@@ -7,6 +7,7 @@ import java.util.UUID;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.Comparator;
 
 public class Student extends User{
@@ -25,7 +26,9 @@ public class Student extends User{
      * @param currentCourses list of current courses being taken
      * @param notes notes from advisor 
      */
-    public Student(UUID id, String username, String password, String firstName, String lastName, String standing, Major major, double GPA, ArrayList<StudentCourse> courses,  ArrayList<String> notes) {
+    public Student(UUID id, String username, String password, String firstName,
+     String lastName, String standing, Major major, double GPA,
+      ArrayList<StudentCourse> courses,  ArrayList<String> notes) {
         super(id, username, password, firstName, lastName);
                                                             
         this.setMajor(major);
@@ -132,5 +135,41 @@ public class Student extends User{
 
     public void setNotes(ArrayList<String> notes) {
         this.notes = notes;
+    }
+
+    public static String getDOB() {
+        Random random = new Random();
+        
+        int year = random.nextInt(5) + 2000; 
+        int month = random.nextInt(12) + 1;
+        
+        
+        int[] daysInMonth = {
+            31, 28, 31, 30, 31, 30,
+            31, 31, 30, 31, 30, 31
+        };
+        
+        
+        if (month == 2 && ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))) {
+            daysInMonth[1] = 29;
+        }
+        
+        int day = random.nextInt(daysInMonth[month - 1]) + 1;
+        
+        return String.format("%02d/%02d/%04d", day, month, year);
+    }
+
+    public String generateStudentEmail() {
+        Random random = new Random();
+        
+        // Extract the first letter of the first and last names
+        char firstInitial = this.getFirstName().charAt(0);
+        char lastInitial = this.getLastName().charAt(0);
+        
+        // Generate two random digits
+        int randomNumber = random.nextInt(90) + 10; // Ensures a two-digit number
+        
+        // Format and return the email address
+        return String.format("%c%c%d@email.sc.edu", firstInitial, lastInitial, randomNumber).toLowerCase();
     }
 }

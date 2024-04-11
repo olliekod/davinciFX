@@ -38,6 +38,12 @@ public class StudentScreenController implements Initializable {
     @FXML
     private ListView EightSemesterPlanListView;
 
+    @FXML
+    private Label DateofBirthLabel;
+
+    @FXML
+    private Label EmailLabel;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         System.out.println("init");
@@ -47,7 +53,8 @@ public class StudentScreenController implements Initializable {
         String GPA = "GPA: " + s.getGPAString();
         String major = "Major: " + s.getMajor().getName();
         String standing = "Standing: " + s.getStanding();
-        
+        String DOB = "Date of Birth:" + s.getDOB();
+        String Email = "Email: " + s.generateStudentEmail();
 
         
         nameLabel.setText(usersName);
@@ -55,6 +62,8 @@ public class StudentScreenController implements Initializable {
         GPALabel.setText(GPA);
         MajorLabel.setText(major);
         StandingLabel.setText(standing);
+        DateofBirthLabel.setText(DOB);
+        EmailLabel.setText(Email);
         displayEightSemesterPlanListView();
 
     }
