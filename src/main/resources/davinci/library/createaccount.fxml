@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="450.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.SecondaryController">
+<VBox alignment="CENTER" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.SecondaryController">
     <children>
         <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="80.0" prefWidth="466.0" text="Student Account Creator" textAlignment="CENTER">
          <font>
