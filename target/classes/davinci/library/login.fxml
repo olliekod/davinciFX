@@ -14,8 +14,8 @@
          <font>
             <Font name="Goudy Old Style" size="49.0" />
          </font></Label>
-      <TextField fx:id="usernameBox" maxWidth="200.0" promptText="username" />
-      <TextField fx:id="passwordBox" maxWidth="200.0" promptText="password" />
+      <TextField fx:id="usernameBox" maxWidth="200.0" promptText="username" styleClass="input-box"/>
+      <TextField fx:id="passwordBox" maxWidth="200.0" promptText="password" styleClass="input-box"/>
       <Button fx:id="loginButton" onAction="#loginButtonClicked" prefHeight="30.0" prefWidth="95.0" text="Login" styleClass="custom-button">
          <VBox.margin>
             <Insets top="10.0" />

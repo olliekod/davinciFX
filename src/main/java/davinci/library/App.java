@@ -8,8 +8,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import davinci.model.User;
+import davinci.model.DataWriter;
+import davinci.model.Major;
+import davinci.model.MajorList;
 import davinci.model.Student;
 
 /**

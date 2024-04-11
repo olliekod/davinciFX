@@ -30,3 +30,7 @@
 .custom-button:pressed {
     
 }
+
+.input-box {
+    -fx-background-color:#f4f4f4;
+}
