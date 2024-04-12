@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Observable;
 import java.util.ResourceBundle;
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -44,19 +48,30 @@ public class StudentScreenController implements Initializable {
     @FXML
     private Label EmailLabel;
 
+    @FXML
+    private ImageView IconImageView;
+
+    @FXML
+    private Label CreditHoursLabel;
+
+    @FXML
+    private Label GraduationDateLabel;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println("init");
+        //System.out.println("init");
         
         String usersName = "Name: " + u.getFirstName() + " " + u.getLastName();
         String studentID = "ID: " + u.getStudentID();
         String GPA = "GPA: " + s.getGPAString();
         String major = "Major: " + s.getMajor().getName();
         String standing = "Standing: " + s.getStanding();
-        String DOB = "Date of Birth:" + s.getDOB();
+        String DOB = "Date of Birth: " + s.getDOB();
         String Email = "Email: " + s.generateStudentEmail();
+        String CreditHours = s.calculateTotalCreditHours();
+        String GraduationDate = s.calculateGraduationYear();
 
-        
+
         nameLabel.setText(usersName);
         StudentIDLabel.setText(studentID);
         GPALabel.setText(GPA);
@@ -64,20 +79,28 @@ public class StudentScreenController implements Initializable {
         StandingLabel.setText(standing);
         DateofBirthLabel.setText(DOB);
         EmailLabel.setText(Email);
+        CreditHoursLabel.setText(CreditHours);
+        GraduationDateLabel.setText(GraduationDate);
         displayEightSemesterPlanListView();
 
+    }
+
+    @FXML
+    private void logoutButtonClicked() throws IOException {
+        App.setRoot("login");
     }
 
     private void displayEightSemesterPlanListView(){
         
         ObservableList<String> eightSemesterPlan = FXCollections.observableArrayList();
-        System.out.println("Size: " + eightSemesterPlan.size());
+        //System.out.println("Size: " + eightSemesterPlan.size());
         for(Course course : s.displayEightSemesterPlan()) {
             eightSemesterPlan.add(course.getTitle());
             
         }
-        //eightSemesterPlanListView = new ListView<String>(eightSemesterPlan);
+
         EightSemesterPlanListView.setItems(eightSemesterPlan);
     }
+
 
 }

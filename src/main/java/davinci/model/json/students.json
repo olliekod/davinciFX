@@ -1,8 +1,8 @@
 [
     {
         "standing": "freshman",
-        "firstName": "Josh",
-        "lastName": "Smith",
+        "firstName": "Chase",
+        "lastName": "Allen",
         "password": "password",
         "coursesTaken": [
             {
@@ -23,7 +23,7 @@
             "you need to pass 146"
         ],
         "major": "Computer Science",
-        "GPA": "3.54",
+        "GPA": "1.0",
         "id": "df75b2af-b95d-4548-91f6-18871af1d6ef",
         "userName": "JS20"
     },

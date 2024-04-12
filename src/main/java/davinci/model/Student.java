@@ -1,6 +1,7 @@
 package davinci.model;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.UUID;
@@ -62,6 +63,26 @@ public class Student extends User{
 
         plan = sortedMajorReqs;
         return plan;
+    }
+
+    public String calculateTotalCreditHours() {
+        int totalCreditHours = 0;
+
+        
+        if (this.courses== null || this.courses.isEmpty()) {
+            return "No courses taken.";
+        }
+
+        
+        for (Course sc : this.courses) {
+            Course course = sc; 
+            if (course != null) {
+                totalCreditHours += course.getHours(); 
+            }
+        }
+
+        
+        return "Total Credit Hours: " + totalCreditHours;
     }
     
     @Override
@@ -137,7 +158,7 @@ public class Student extends User{
         this.notes = notes;
     }
 
-    public static String getDOB() {
+    public String getDOB() {
         Random random = new Random();
         
         int year = random.nextInt(5) + 2000; 
@@ -162,14 +183,39 @@ public class Student extends User{
     public String generateStudentEmail() {
         Random random = new Random();
         
-        // Extract the first letter of the first and last names
+      
         char firstInitial = this.getFirstName().charAt(0);
         char lastInitial = this.getLastName().charAt(0);
         
-        // Generate two random digits
-        int randomNumber = random.nextInt(90) + 10; // Ensures a two-digit number
+       
+        int randomNumber = random.nextInt(90) + 10; 
         
-        // Format and return the email address
+        
         return String.format("%c%c%d@email.sc.edu", firstInitial, lastInitial, randomNumber).toLowerCase();
+    }
+
+    public String calculateGraduationYear() {
+        int currentYear = Calendar.getInstance().get(Calendar.YEAR);
+        int yearsUntilGraduation;
+
+        switch (this.standing.toLowerCase()) {
+            case "freshman":
+                yearsUntilGraduation = 4;
+                break;
+            case "sophomore":
+                yearsUntilGraduation = 3;
+                break;
+            case "junior":
+                yearsUntilGraduation = 2;
+                break;
+            case "senior":
+                yearsUntilGraduation = 1;
+                break;
+            default:
+                return "Unknown standing";
+        }
+
+        int graduationYear = currentYear + yearsUntilGraduation;
+        return "Expected Graduation Year: " + graduationYear;
     }
 }
