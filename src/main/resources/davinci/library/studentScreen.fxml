@@ -49,7 +49,7 @@
                 <Font name="Georgia" size="15.0" />
             </font>
         </Label>
-      <Label id="DateofBirthLabel" fx:id="DateofBirthLabel" layoutX="11.0" layoutY="348.0" prefHeight="21.0" prefWidth="188.0" text="DateOB">
+      <Label id="DateofBirthLabel" fx:id="DateofBirthLabel" layoutX="11.0" layoutY="348.0" prefHeight="21.0" prefWidth="188.0" text="DOB">
          <font>
             <Font size="15.0" />
          </font>
@@ -77,7 +77,7 @@
       </Label>
       <Label layoutX="521.0" layoutY="156.0" text="All Major Required Courses">
          <font>
-            <Font name="Franklin Gothic Medium" size="20.0" />
+            <Font name="Times New Roman" size="20.0" />
          </font>
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="140.0" layoutX="-1.0" layoutY="-26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="806.0" />
