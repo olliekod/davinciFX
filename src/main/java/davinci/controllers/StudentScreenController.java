@@ -95,7 +95,11 @@ public class StudentScreenController implements Initializable {
         ObservableList<String> eightSemesterPlan = FXCollections.observableArrayList();
         //System.out.println("Size: " + eightSemesterPlan.size());
         for(Course course : s.displayEightSemesterPlan()) {
-            eightSemesterPlan.add(course.getTitle());
+            if(course.getCourseNumber() != 0){
+            eightSemesterPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle());
+            } else {
+                eightSemesterPlan.add(course.getTitle());
+            }
             
         }
 
