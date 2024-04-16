@@ -32,19 +32,19 @@
         
         <ListView id="EightSemesterPlanListView" fx:id="EightSemesterPlanListView" layoutX="494.0" layoutY="207.0" maxHeight="800.0" maxWidth="346.0" prefHeight="230.0" prefWidth="285.0" AnchorPane.leftAnchor="494.0" AnchorPane.topAnchor="207.0" />
         
-        <Label id="GPALabel" fx:id="GPALabel" layoutX="255.0" layoutY="168.0" text="GPA" AnchorPane.leftAnchor="255.0" AnchorPane.topAnchor="168.0">
+        <Label id="GPALabel" fx:id="GPALabel" layoutX="255.0" layoutY="168.0" text="GPA:" AnchorPane.leftAnchor="255.0" AnchorPane.topAnchor="168.0">
             <font>
                 <Font name="Georgia" size="15.0" />
             </font>
         </Label>
         
-        <Label id="MajorLabel" fx:id="MajorLabel" layoutX="256.0" layoutY="225.0" text="Major" AnchorPane.leftAnchor="256.0" AnchorPane.topAnchor="225.0">
+        <Label id="MajorLabel" fx:id="MajorLabel" layoutX="256.0" layoutY="225.0" text="Major:" AnchorPane.leftAnchor="256.0" AnchorPane.topAnchor="225.0">
             <font>
                 <Font name="Georgia" size="15.0" />
             </font>
         </Label>
         
-        <Label id="StandingLabel" fx:id="StandingLabel" layoutX="256.0" layoutY="286.0" text="Standing" AnchorPane.leftAnchor="256.0" AnchorPane.topAnchor="286.0">
+        <Label id="StandingLabel" fx:id="StandingLabel" layoutX="256.0" layoutY="286.0" text="Standing:" AnchorPane.leftAnchor="256.0" AnchorPane.topAnchor="286.0">
             <font>
                 <Font name="Georgia" size="15.0" />
             </font>
@@ -65,12 +65,12 @@
             <Image url="@../../images/blank-person-icon-11.jpg" />
          </image>
       </ImageView>
-      <Label id="CreditHoursLabel" fx:id="CreditHoursLabel" layoutX="255.0" layoutY="404.0" text="CreditHours">
+      <Label id="CreditHoursLabel" fx:id="CreditHoursLabel" layoutX="255.0" layoutY="404.0" text="Credit Hours:">
          <font>
             <Font name="Georgia" size="15.0" />
          </font>
       </Label>
-      <Label id="GraduationDateLabel" fx:id="GraduationDateLabel" layoutX="255.0" layoutY="348.0" text="GraduationDate">
+      <Label id="GraduationDateLabel" fx:id="GraduationDateLabel" layoutX="255.0" layoutY="348.0" text="Graduation Date:">
          <font>
             <Font name="Georgia" size="15.0" />
          </font>
