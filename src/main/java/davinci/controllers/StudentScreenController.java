@@ -61,6 +61,9 @@ public class StudentScreenController implements Initializable {
     @FXML
     private Button DegreeProgressButton;
 
+    @FXML
+    private Button NotesButton;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //System.out.println("init");
@@ -96,7 +99,14 @@ public class StudentScreenController implements Initializable {
 
     @FXML
     private void DegreeProgressButtonClicked() throws IOException {
+        System.out.println("Degree Progress Button Clicked");
         App.setRoot("DegreeProgress");
+    }
+
+    @FXML
+    private void NotesButtonClicked() throws IOException {
+        System.out.println("Notes Button Clicked");
+        App.setRoot("studentNotes");
     }
 
     private void displayEightSemesterPlanListView(){

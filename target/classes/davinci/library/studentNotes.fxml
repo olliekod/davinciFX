@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller= "davinci.controllers.StudentNotesController">
    <children>
       <Label layoutX="14.0" layoutY="58.0" prefHeight="36.0" prefWidth="220.0" text="Advisor Notes">
          <font>
@@ -50,6 +50,6 @@
             </Label>
          </children>
       </VBox>
-      <Button id="LogoutStudentButton" fx:id="LogoutStudentButton" layoutX="13.0" layoutY="89.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="Log out" />
+      <Button id="LogoutStudentButton" fx:id="LogoutStudentButton" layoutX="13.0" layoutY="89.0" mnemonicParsing="false" text="Log out" />
    </children>
 </Pane>
