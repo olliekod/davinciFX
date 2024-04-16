@@ -20,6 +20,31 @@ import javafx.scene.control.ListView;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
 
-public class StudentNotesController {
-    
+public class StudentNotesController implements Initializable{
+
+    User u = App.user;
+    Student s = App.student;
+
+
+    @FXML
+    private ListView noteList;
+
+
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        displayNotesListView();
+        
+    }
+
+    public void displayNotesListView() {
+        ObservableList<String> notes = FXCollections.observableArrayList();
+        //System.out.println("Size: " + eightSemesterPlan.size());
+        for(String note : s.getNotes()) {
+            if(note != null){
+                notes.add(note);
+            }
+        }
+        noteList.setItems(notes);
+    }
 }
