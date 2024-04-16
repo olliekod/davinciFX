@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="450.0" minWidth="800.0" prefHeight="450.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.advisorScreenController">
+   <children>
+      <Label fx:id="testLabel" layoutX="222.0" layoutY="108.0" text="this text will change" />
+   </children>
+</AnchorPane>

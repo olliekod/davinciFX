@@ -2,9 +2,12 @@ package davinci.controllers;
 
 import davinci.library.App;
 import davinci.model.Facade;
+import davinci.model.Faculty;
 import davinci.model.UserList;
 
 import java.io.IOException;
+import java.util.UUID;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -32,6 +35,15 @@ public class PrimaryController {
         Facade f = new Facade();
         if (f.login(username, password)) {
             App.user = f.getCurrentUser();
+
+            UUID searchID = App.user.getID();
+            Faculty fac = UserList.getFacultyByID(searchID);
+            if (fac != null) {
+                App.setRoot("advisorScreen");
+                System.out.println("fac works");
+                return;
+            }
+
             App.student = f.getCurrentStudent();
             App.setRoot("studentScreen");
         } else {

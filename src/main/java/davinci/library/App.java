@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import davinci.model.User;
 import davinci.model.DataWriter;
+import davinci.model.Faculty;
 import davinci.model.Major;
 import davinci.model.MajorList;
 import davinci.model.Student;
@@ -24,6 +25,7 @@ public class App extends Application {
     private static Scene scene;
     public static User user = null;
     public static Student student = null;
+    public static Faculty faculty = null;
 
     @Override
     public void start(Stage stage) throws IOException {
