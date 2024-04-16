@@ -15,6 +15,7 @@ import javafx.scene.image.ImageView;
 
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.collections.ObservableList;
@@ -57,6 +58,9 @@ public class StudentScreenController implements Initializable {
     @FXML
     private Label GraduationDateLabel;
 
+    @FXML
+    private Button DegreeProgressButton;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         //System.out.println("init");
@@ -88,6 +92,11 @@ public class StudentScreenController implements Initializable {
     @FXML
     private void logoutButtonClicked() throws IOException {
         App.setRoot("login");
+    }
+
+    @FXML
+    private void DegreeProgressButtonClicked() throws IOException {
+        App.setRoot("DegreeProgress");
     }
 
     private void displayEightSemesterPlanListView(){
