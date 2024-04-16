@@ -3,10 +3,11 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
@@ -32,90 +33,81 @@
          </image>
       </ImageView>
       <Button layoutX="734.0" layoutY="12.0" mnemonicParsing="false" text="Home" />
-      <Label layoutX="299.0" layoutY="122.0" text="Eight Semester Plan">
-         <font>
-            <Font name="Times New Roman" size="23.0" />
-         </font>
-      </Label>
-      <VBox layoutY="292.0" prefHeight="172.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 5">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterFiveListView" fx:id="semesterFiveListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutY="164.0" prefHeight="124.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 1">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterOneListView" fx:id="semesterOneListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="206.0" layoutY="292.0" prefHeight="172.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 6">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterSixListView" fx:id="semesterSixListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="403.0" layoutY="292.0" prefHeight="172.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 7">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterSevenListView" fx:id="semesterSevenListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="607.0" layoutY="292.0" prefHeight="172.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 8">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterEightListView" fx:id="semesterEightListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="206.0" layoutY="164.0" prefHeight="124.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 2">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterTwoListView" fx:id="semesterTwoListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="403.0" layoutY="164.0" prefHeight="124.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 3">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterThreePlanView" fx:id="semesterThreePlanView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
-      <VBox layoutX="607.0" layoutY="164.0" prefHeight="124.0" prefWidth="187.0">
-         <children>
-            <Label text="Semester 4">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <ListView id="semesterFourListView" fx:id="semesterFourListView" prefHeight="200.0" prefWidth="200.0" />
-         </children>
-      </VBox>
+      <TabPane layoutX="2.0" layoutY="121.0" prefHeight="343.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Semester 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterOneListView" fx:id="semesterOneListView" prefHeight="316.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Semester 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterTwoListView" fx:id="semesterTwoListView" layoutX="-1.0" layoutY="1.0" prefHeight="316.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Semester 3">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterThreePlanView" fx:id="semesterThreePlanView" layoutX="-1.0" layoutY="1.0" prefHeight="313.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Semester 4">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterFourListView" fx:id="semesterFourListView" layoutX="2.0" layoutY="-1.0" prefHeight="318.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Semester 5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterFiveListView" fx:id="semesterFiveListView" prefHeight="315.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Semester 6">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterSixListView" fx:id="semesterSixListView" layoutY="-1.0" prefHeight="316.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Semester 7">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterSevenListView" fx:id="semesterSevenListView" layoutY="1.0" prefHeight="315.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Semester 8">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView id="semesterEightListView" fx:id="semesterEightListView" prefHeight="315.0" prefWidth="800.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>

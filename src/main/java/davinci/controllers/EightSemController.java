@@ -62,59 +62,59 @@ public class EightSemController implements Initializable{
         ObservableList<String> semesterEightPlan = FXCollections.observableArrayList();
 
         for(Course course: s.displaySemesterbyInt(1)){
-            if(course != null)
-                semesterOnePlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterOnePlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterOnePlan.add("No Courses");
+                semesterOnePlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(2)){
-            if(course != null)
-                semesterTwoPlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterTwoPlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterTwoPlan.add("No Courses");
+                semesterTwoPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");  
         }
 
         for(Course course: s.displaySemesterbyInt(3)){
-            if(course != null)
-                semesterThreePlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterThreePlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterThreePlan.add("No Courses");
+                semesterThreePlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(4)){
-            if(course != null)
-                semesterFourPlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterFourPlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterFourPlan.add("No Courses");
+                semesterFourPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(5)){
-            if(course != null)
-                semesterFivePlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterFivePlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterFivePlan.add("No Courses");
+                semesterFivePlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(6)){
-            if(course != null)
-                semesterSixPlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterSixPlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterSixPlan.add("No Courses");
+                semesterSixPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(7)){
-            if(course != null)
-                semesterSevenPlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterSevenPlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterSevenPlan.add("No Courses");
+                semesterSevenPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
         for(Course course: s.displaySemesterbyInt(8)){
-            if(course != null)
-                semesterEightPlan.add(course.getTitle());
+            if(course != null && course.getSubject().equals(""))
+                semesterEightPlan.add(course.getTitle() + " - " + course.getHours() + " credits");
             else
-                semesterEightPlan.add("No Courses");
+                semesterEightPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");
         }
 
 
