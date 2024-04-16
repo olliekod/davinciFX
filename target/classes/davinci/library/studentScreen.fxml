@@ -99,7 +99,8 @@
             <Image url="@../../images/USC%20Palmetto%20Logo.jpg" />
          </image>
       </ImageView>
-      <Button id="DegreeProgressButton" fx:id="DegreeProgressButton" layoutX="14.0" layoutY="92.0" mnemonicParsing="false" onAction="#DegreeProgressButtonClicked" text="Degree Progress" />
-      <Button id="NotesButton" fx:id="NotesButton" layoutX="135.0" layoutY="92.0" mnemonicParsing="false" onAction="#NotesButtonClicked" text="Notes" />
+      <Button id="DegreeProgressButton" fx:id="DegreeProgressButton" layoutX="137.0" layoutY="92.0" mnemonicParsing="false" onAction="#DegreeProgressButtonClicked" prefHeight="25.0" prefWidth="108.0" text="Degree Progress" />
+      <Button id="NotesButton" fx:id="NotesButton" layoutX="252.0" layoutY="92.0" mnemonicParsing="false" onAction="#NotesButtonClicked" text="Notes" />
+      <Button id="EightSemPlanButton" fx:id="EightSemPlanButton" layoutX="9.0" layoutY="92.0" mnemonicParsing="false" onAction="#EightSemPlanButtonClicked" text="Eight Semester Plan" />
     </children>
 </AnchorPane>

@@ -13,10 +13,10 @@
          <font>
             <Font name="Goudy Old Style" size="37.0" />
          </font></Label>
-      <TextField id="accountCreatorUsernameText" maxWidth="200.0" promptText="username" />
-      <TextField id="accountCreatorPasswordText" layoutX="310.0" layoutY="201.0" maxWidth="200.0" promptText="password" />
-      <TextField id="accountCreatorFirstNameTest" layoutX="310.0" layoutY="374.0" maxWidth="200.0" promptText="first name" />
-      <TextField id="accountCreatorLastNameText" layoutX="310.0" layoutY="396.0" maxWidth="200.0" promptText="last name" />
+      <TextField id="accountCreatorUsernameText" fx:id="usernameInput" maxWidth="200.0" promptText="username" />
+      <TextField id="accountCreatorPasswordText" fx:id="passwordInput" layoutX="310.0" layoutY="201.0" maxWidth="200.0" promptText="password" />
+      <TextField id="accountCreatorFirstNameTest" fx:id="firstNameInput" layoutX="310.0" layoutY="374.0" maxWidth="200.0" promptText="first name" />
+      <TextField id="accountCreatorLastNameText" fx:id="lastNameInput" layoutX="310.0" layoutY="396.0" maxWidth="200.0" promptText="last name" />
         <Button fx:id="secondaryButton" onAction="#switchToPrimary" text="create account" />
     </children>
     <padding>
