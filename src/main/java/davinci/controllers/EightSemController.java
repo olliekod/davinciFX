@@ -49,8 +49,15 @@ public class EightSemController implements Initializable{
     @FXML
     private TableView semesterEightPlanTable;
 
+    @FXML
+    private ObservableList<Course> courses;
+
     @Override
     public void initialize(URL url, ResourceBundle rb)  {
-        //semesterOnePlanTable.setItems(FXCollections.observableArrayList(s.displayEightSemesterPlan().get(0)));
+        courses = FXCollections.observableArrayList(); // Create an ObservableList
+        for(Course c : s.displayEightSemesterPlan()) {
+            courses.add(c);
+        }
+        semesterOnePlanTable.setItems(courses);
     }
 }

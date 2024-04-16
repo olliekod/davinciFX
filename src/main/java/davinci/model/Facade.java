@@ -52,6 +52,11 @@ public class Facade {
 
     }
 
+    public ArrayList<Course> displaySemesterByNumber(Student student, int semester) {
+        Student currentStudent = student;
+        return currentStudent.displaySemesterbyInt(semester);
+      }
+
     public ArrayList<Course> getEightSemesterPlan(UUID id) {
         
         Student temp = users.getStudentByID(id);
