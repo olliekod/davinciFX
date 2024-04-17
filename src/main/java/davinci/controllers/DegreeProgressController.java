@@ -45,10 +45,27 @@ public class DegreeProgressController implements Initializable  {
     @FXML
     private ProgressBar degreeProgressBar;
 
+    @FXML
+    private Label degreeProgressLabel;
+
+    @FXML 
+    private Label currentStandingLabel;
+
+    double progress;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //Set progress bar for student progress
+        degreeProgressBar.setStyle("-fx-accent: #9A2A2A;");
+        progress = s.calculateDegreeProgress();
+        degreeProgressBar.setProgress(progress);
         
+
+        String degreeProgress = String.format("%.2f", progress * 100);
+        degreeProgressLabel.setText("Degree Progress: " + degreeProgress + "%");
+        currentStandingLabel.setText("Given Degree Progress - Your Current Standing: " + s.getStanding());
     }
+        
 
     @FXML
     private void logoutButtonClicked() throws IOException {

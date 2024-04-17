@@ -33,10 +33,20 @@
       <Button id="userInformationButton" fx:id="userInformationButton" layoutX="3.0" layoutY="102.0" mnemonicParsing="false" onAction="#userInformationButtonClicked" text="User Information" />
       <Button id="EightSemesterPlanButton" fx:id="EightSemesterPlanButton" layoutX="118.0" layoutY="102.0" mnemonicParsing="false" onAction="#eightSemesterButtonClicked" text="Eight Semester Plan" />
       <Button id="notesButton" fx:id="notesButton" layoutX="247.0" layoutY="102.0" mnemonicParsing="false" onAction="#notesButtonClicked" text="Notes" />
-      <ProgressBar layoutX="71.0" layoutY="180.0" prefHeight="35.0" prefWidth="686.0" progress="0.0" />
-      <Label alignment="CENTER" layoutX="267.0" layoutY="139.0" prefHeight="35.0" prefWidth="267.0" text="Degree Progress" textAlignment="CENTER">
+      <ProgressBar id="degreeProgressBar" fx:id="degreeProgressBar" layoutX="57.0" layoutY="188.0" prefHeight="35.0" prefWidth="686.0" progress="0.0" />
+      <Label alignment="CENTER" layoutX="267.0" layoutY="142.0" prefHeight="35.0" prefWidth="267.0" text="Degree Progress" textAlignment="CENTER">
          <font>
             <Font size="24.0" />
+         </font>
+      </Label>
+      <Label id="degreeProgressLabel" fx:id="degreeProgressLabel" alignment="CENTER" layoutX="271.0" layoutY="181.0" prefHeight="49.0" prefWidth="686.0" text="Degree Progress" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="currentStandingLabel" fx:id="currentStandingLabel" alignment="CENTER" layoutX="63.0" layoutY="230.0" prefHeight="49.0" prefWidth="686.0" text="Current Standing" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
          </font>
       </Label>
    </children>
