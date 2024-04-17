@@ -109,7 +109,8 @@
             </Tab>
         </tabs>
       </TabPane>
-      <Button id="notesButton" fx:id="notesButton" layoutX="230.0" layoutY="92.0" mnemonicParsing="false" onAction="#notesButtonClicked" text="Notes" />
-      <Button id="degreeProgressButton" fx:id="degreeProgressButton" layoutX="120.0" layoutY="92.0" mnemonicParsing="false" onAction="#degreeProgressButtonClicked" text="Degree Progress" />
+      <Button id="notesButton" fx:id="notesButton" layoutX="364.0" layoutY="92.0" mnemonicParsing="false" onAction="#notesButtonClicked" text="Notes" />
+      <Button id="degreeProgressButton" fx:id="degreeProgressButton" layoutX="252.0" layoutY="92.0" mnemonicParsing="false" onAction="#degreeProgressButtonClicked" text="Degree Progress" />
+      <Button layoutX="122.0" layoutY="92.0" mnemonicParsing="false" text="Eight Semester Plan" />
    </children>
 </AnchorPane>

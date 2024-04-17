@@ -43,7 +43,8 @@
       <ListView id="noteList" fx:id="noteList" layoutX="14.0" layoutY="153.0" prefHeight="340.0" prefWidth="778.0" />
       <Button id="logoutButton" fx:id="logoutButton" layoutX="749.0" layoutY="89.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="Logout" />
       <ScrollBar layoutX="776.0" layoutY="153.0" orientation="VERTICAL" prefHeight="340.0" prefWidth="16.0" />
-      <Button id="degreeProgressButton" fx:id="degreeProgressButton" layoutX="118.0" layoutY="89.0" mnemonicParsing="false" onAction="#degreeProgressButtonClicked" text="Degree Progress" />
-      <Button id="EightSemesterPlanButton" fx:id="EightSemesterPlanButton" layoutX="228.0" layoutY="89.0" mnemonicParsing="false" onAction="#eightSemPlanButtonClicked" text="Eight Semester Plan" />
+      <Button id="degreeProgressButton" fx:id="degreeProgressButton" layoutX="257.0" layoutY="89.0" mnemonicParsing="false" onAction="#degreeProgressButtonClicked" text="Degree Progress" />
+      <Button id="EightSemesterPlanButton" fx:id="EightSemesterPlanButton" layoutX="124.0" layoutY="89.0" mnemonicParsing="false" onAction="#eightSemPlanButtonClicked" text="Eight Semester Plan" />
+      <Button layoutX="371.0" layoutY="89.0" mnemonicParsing="false" text="Notes" />
    </children>
 </Pane>
