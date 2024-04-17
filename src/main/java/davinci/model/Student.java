@@ -84,6 +84,26 @@ public class Student extends User{
         
         return "Total Credit Hours: " + totalCreditHours;
     }
+
+    public int calculateTotalCreditHoursInt() {
+        int totalCreditHours = 0;
+
+        
+        if (this.courses== null || this.courses.isEmpty()) {
+            return 0;
+        }
+
+        
+        for (Course sc : this.courses) {
+            Course course = sc; 
+            if (course != null) {
+                totalCreditHours += course.getHours(); 
+            }
+        }
+
+        
+        return totalCreditHours;
+    }
     
     @Override
     public UUID getID() {
@@ -241,5 +261,12 @@ public class Student extends User{
 
         int graduationYear = currentYear + yearsUntilGraduation;
         return "Expected Graduation Year: " + graduationYear;
+    }
+
+    public double calculateDegreeProgress(){
+        int totalCredits = major.getHours();
+        int creditsEarned = calculateTotalCreditHoursInt();
+
+        return (double) creditsEarned / totalCredits;
     }
 }

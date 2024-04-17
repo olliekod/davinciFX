@@ -19,6 +19,7 @@ import javafx.scene.control.ListView;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
 import javafx.scene.control.TableView;
+import javafx.scene.control.Button;
 
 
 public class EightSemController implements Initializable{
@@ -48,6 +49,18 @@ public class EightSemController implements Initializable{
 
     @FXML
     private ListView semesterEightListView;
+
+    @FXML
+    private Button logoutButton;
+
+    @FXML 
+    private Button userInformationButton;
+
+    @FXML
+    private Button notesButton;
+
+    @FXML
+    private Button degreeProgressButton;
 
 
     @Override
@@ -162,6 +175,29 @@ public class EightSemController implements Initializable{
             semesterEightListView.setItems(semesterEightPlan);
 
 
+    }
+
+    @FXML
+    private void logoutButtonClicked() throws IOException {
+        App.setRoot("login");
+    }
+
+    @FXML
+    private void userInformationButtonClicked() throws IOException {
+        System.out.println("User Information Button Clicked");
+        App.setRoot("studentScreen");
+    }
+
+    @FXML
+    private void notesButtonClicked() throws IOException {
+        System.out.println("Notes Button Clicked");
+        App.setRoot("studentNotes");
+    }
+    
+    @FXML
+    private void degreeProgressButtonClicked() throws IOException {
+        System.out.println("Degree Progress Button Clicked");
+        App.setRoot("DegreeProgress");
     }
 
 }

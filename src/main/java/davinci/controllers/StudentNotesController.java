@@ -19,6 +19,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.collections.ObservableList;
 import javafx.collections.FXCollections;
+import javafx.scene.control.TableView;
+import javafx.scene.control.Button;
 
 public class StudentNotesController implements Initializable{
 
@@ -28,6 +30,9 @@ public class StudentNotesController implements Initializable{
 
     @FXML
     private ListView noteList;
+
+    @FXML
+    private Button logoutButton;
 
 
 
@@ -46,5 +51,25 @@ public class StudentNotesController implements Initializable{
             }
         }
         noteList.setItems(notes);
+    }
+
+    @FXML
+    private void logoutButtonClicked() throws IOException {
+        App.setRoot("login");
+    }
+
+    @FXML
+    private void userInformationButtonClicked() throws IOException {
+        App.setRoot("studentScreen");
+    } 
+
+    @FXML 
+    private void degreeProgressButtonClicked() throws IOException {
+        App.setRoot("DegreeProgress");
+    }
+
+    @FXML
+    private void eightSemPlanButtonClicked() throws IOException {
+        App.setRoot("studentEightSemPlan");
     }
 }

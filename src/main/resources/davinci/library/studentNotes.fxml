@@ -19,7 +19,7 @@
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="122.0" layoutY="-3.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="806.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#721b11" height="35.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="806.0" />
-      <Label layoutX="76.0" layoutY="44.0" prefHeight="40.0" prefWidth="317.0" text="SOUTH CAROLINA" textFill="WHITE">
+      <Label layoutX="80.0" layoutY="44.0" prefHeight="40.0" prefWidth="317.0" text="SOUTH CAROLINA" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="36.0" />
          </font>
@@ -29,7 +29,7 @@
             <Image url="@../../images/USC%20Palmetto%20Logo.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="76.0" layoutY="24.0" text="UNIVERSITY OF" textFill="WHITE">
+      <Label layoutX="80.0" layoutY="24.0" text="UNIVERSITY OF" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="18.0" />
          </font>
@@ -39,9 +39,11 @@
             <Font name="Times New Roman" size="23.0" />
          </font>
       </Label>
-      <Button id="homeButton" layoutX="16.0" layoutY="89.0" mnemonicParsing="false" text="Home" />
+      <Button id="userInformationButton" fx:id="userInformationButton" layoutX="6.0" layoutY="89.0" mnemonicParsing="false" onAction="#userInformationButtonClicked" text="User Information" />
       <ListView id="noteList" fx:id="noteList" layoutX="14.0" layoutY="153.0" prefHeight="340.0" prefWidth="778.0" />
-      <Button id="LogoutStudentButton" fx:id="LogoutStudentButton" layoutX="740.0" layoutY="89.0" mnemonicParsing="false" text="Log out" />
+      <Button id="logoutButton" fx:id="logoutButton" layoutX="749.0" layoutY="89.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="Logout" />
       <ScrollBar layoutX="776.0" layoutY="153.0" orientation="VERTICAL" prefHeight="340.0" prefWidth="16.0" />
+      <Button id="degreeProgressButton" fx:id="degreeProgressButton" layoutX="118.0" layoutY="89.0" mnemonicParsing="false" onAction="#degreeProgressButtonClicked" text="Degree Progress" />
+      <Button id="EightSemesterPlanButton" fx:id="EightSemesterPlanButton" layoutX="228.0" layoutY="89.0" mnemonicParsing="false" onAction="#eightSemPlanButtonClicked" text="Eight Semester Plan" />
    </children>
 </Pane>
