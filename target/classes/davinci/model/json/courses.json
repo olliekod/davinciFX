@@ -35,6 +35,22 @@
         "hours": "3",
         "courseNumber": "0",
         "subject": "",
+        "id": "78812a5e-cca0-4305-b31b-873db50bd56c",
+        "title": "Approved Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "1",
+        "courseNumber": "0",
+        "subject": "",
+        "id": "0f2a289b-e68d-4a35-b98a-863cfb91ebe3",
+        "title": "Approved Elective",
+        "prereqs": ""
+    },
+    {
+        "hours": "3",
+        "courseNumber": "0",
+        "subject": "",
         "id": "b8ef19b5-58b8-4bae-a126-723b77df0532",
         "title": "CSCE Major Elective",
         "prereqs": ""

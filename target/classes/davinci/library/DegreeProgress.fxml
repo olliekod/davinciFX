@@ -49,5 +49,15 @@
             <Font size="18.0" />
          </font>
       </Label>
+      <Label id="takenHoursLabel" fx:id="takenHoursLabel" alignment="CENTER" layoutX="63.0" layoutY="270.0" prefHeight="49.0" prefWidth="686.0" text="Current Standing" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="hoursRemainingLabel" fx:id="hoursRemainingLabel" alignment="CENTER" layoutX="63.0" layoutY="312.0" prefHeight="49.0" prefWidth="686.0" text="Current Standing" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

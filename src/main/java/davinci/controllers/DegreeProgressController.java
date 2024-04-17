@@ -51,6 +51,12 @@ public class DegreeProgressController implements Initializable  {
     @FXML 
     private Label currentStandingLabel;
 
+    @FXML 
+    private Label takenHoursLabel;
+
+    @FXML
+    private Label hoursRemainingLabel;
+
     double progress;
 
     @Override
@@ -60,10 +66,12 @@ public class DegreeProgressController implements Initializable  {
         progress = s.calculateDegreeProgress();
         degreeProgressBar.setProgress(progress);
         
-
+        //Set labels for student progress
         String degreeProgress = String.format("%.2f", progress * 100);
         degreeProgressLabel.setText("Degree Progress: " + degreeProgress + "%");
         currentStandingLabel.setText("Given Degree Progress - Your Current Standing: " + s.getStanding());
+        takenHoursLabel.setText("Taken Hours: " + s.calculateTotalCreditHoursInt());
+        hoursRemainingLabel.setText("Remaining Hours: " + (s.getMajor().getHours() - s.calculateTotalCreditHoursInt()));
     }
         
 

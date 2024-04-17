@@ -88,6 +88,8 @@ public class EightSemController implements Initializable{
                 semesterTwoPlan.add(course.getSubject() + course.getCourseNumber() + ": " + course.getTitle() + " - " + course.getHours() + " credits");  
         }
 
+        //THIS WORKS
+        int temp = 0;
         for(Course course: s.displaySemesterbyInt(3)){
             if(course != null && course.getSubject().equals(""))
                 semesterThreePlan.add(course.getTitle() + " - " + course.getHours() + " credits");

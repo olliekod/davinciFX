@@ -127,6 +127,26 @@
                 "courseName": "Introduction to Computer Networks416",
                 "reccomendedSemester": "6",
                 "courseID": "5a0303cc-c7a0-4cae-9400-848c17cc8a79"
+            },
+            {
+                "courseName": "CSCE Major Elective",
+                "reccomendedSemester": "6",
+                "courseID": "b8ef19b5-58b8-4bae-a126-723b77df0532"
+            },
+            {
+                "courseName": "Approved Elective",
+                "reccomendedSemester": "6",
+                "courseID": "78812a5e-cca0-4305-b31b-873db50bd56c"
+            },
+            {
+                "courseName": "Approved Elective",
+                "reccomendedSemester": "8",
+                "courseID": "0f2a289b-e68d-4a35-b98a-863cfb91ebe3"
+            },
+            {
+                "courseName": "CSCE Major Elective",
+                "reccomendedSemester": "8",
+                "courseID": "b8ef19b5-58b8-4bae-a126-723b77df0532"
             }
         ],
         "id": "dbc833d3-84f9-477c-8c17-70238011e337",
@@ -169,7 +189,7 @@
             },
             {
                 "courseName": "Carolina Core GFL0",
-                "reccomendedSemester": "4",
+                "reccomendedSemester": "6",
                 "courseID": "b168d1ac-3b7d-486d-9163-61bb02a3d5dc"
             },
             {
