@@ -15,14 +15,30 @@ import javafx.scene.control.Label;
 
 public class advisorScreenController implements Initializable {
 
+
+    @FXML
+    private Label nameLabel;
+
+    @FXML
+    private Label emailLabel;
+
+    @FXML
+    private Label idLabel;
+
     @FXML
     private Button logoutButton;
 
-    private Faculty advisor = App.faculty;
+    private Faculty advisor;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        advisor = App.faculty;
         
+        nameLabel.setText(advisor.getFirstName() + " " + advisor.getLastName());
+        emailLabel.setText(advisor.generateFacultyEmail());
+        idLabel.setText(advisor.getID().toString());
+
     }
 
     @FXML

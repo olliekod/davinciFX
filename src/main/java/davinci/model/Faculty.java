@@ -2,6 +2,7 @@ package davinci.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Random;
 import java.util.UUID;
 
 public class Faculty extends User{
@@ -48,5 +49,16 @@ public class Faculty extends User{
         notes.add(note);
         student.setNotes(notes);
         DataWriter.saveStudents(UserList.getStudents());
+    }
+
+    public String generateFacultyEmail() {
+        Random random = new Random();
+        
+        char firstInitial = this.getFirstName().charAt(0);
+        char lastInitial = this.getLastName().charAt(0);
+        
+        int randomNumber = random.nextInt(90) + 10; 
+        
+        return String.format("%c%c%d@email.sc.edu", firstInitial, lastInitial, randomNumber).toLowerCase();
     }
 }
