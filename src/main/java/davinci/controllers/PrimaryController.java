@@ -39,6 +39,7 @@ public class PrimaryController {
             UUID searchID = App.user.getID();
             Faculty fac = UserList.getFacultyByID(searchID);
             if (fac != null) {
+                App.faculty = fac;
                 App.setRoot("advisorScreen");
                 System.out.println("fac works");
                 return;
