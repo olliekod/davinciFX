@@ -32,6 +32,12 @@ public class advisorScreenController implements Initializable {
     private Button logoutButton;
 
     @FXML
+    private Button myStudentsButton;
+
+    @FXML
+    private Button homeButton;
+
+    @FXML
     private ListView<String> studentView;
 
     private Faculty advisor;
@@ -57,6 +63,16 @@ public class advisorScreenController implements Initializable {
     @FXML
     private void logoutButtonClicked() throws IOException {
         App.setRoot("login");
+    }
+
+    @FXML
+    private void homeButtonClicked() throws IOException {
+        App.setRoot("advisorScreen");
+    }
+
+    @FXML
+    private void myStudentsButtonClicked() throws IOException {
+        App.setRoot("advisorStudents");
     }
 }
 

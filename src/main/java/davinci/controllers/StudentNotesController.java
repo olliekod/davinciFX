@@ -43,7 +43,6 @@ public class StudentNotesController implements Initializable{
 
     public void displayNotesListView() {
         ObservableList<String> notes = FXCollections.observableArrayList();
-        //System.out.println("Size: " + eightSemesterPlan.size());
         for(String note : s.getNotes()) {
             if(note != null){
                 notes.add(note);
