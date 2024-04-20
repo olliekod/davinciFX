@@ -10,8 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.advisorStudentSelectController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="782.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="davinci.controllers.advisorStudentScreenController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="124.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="782.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#721b11" height="35.0" layoutX="-15.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="797.0" />
@@ -37,9 +36,9 @@
             <Font name="Times New Roman" size="23.0" />
          </font>
       </Label>
-      <Button id="advisorAddStudent" fx:id="advisorAddStudent" layoutX="216.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" text="Add Student" />
+      <Button id="advisorAddStudentButton" fx:id="advisorAddStudentButton" layoutX="216.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" text="Add Student" />
       <ListView id="advisorAllStudents" fx:id="advisorAllStudents" layoutX="11.0" layoutY="154.0" prefHeight="247.0" prefWidth="207.0" />
-      <Button id="advisorRemoveStudent" fx:id="advisorRemoveStudent" layoutX="586.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Remove Student" />
+      <Button id="advisorRemoveStudentButton" fx:id="advisorRemoveStudentButton" layoutX="586.0" layoutY="159.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Remove Student" />
       <Label layoutX="374.0" layoutY="123.0" prefHeight="36.0" prefWidth="130.0" text="My Students:">
          <font>
             <Font name="Times New Roman" size="23.0" />
