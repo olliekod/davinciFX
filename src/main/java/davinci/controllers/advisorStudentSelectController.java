@@ -24,6 +24,7 @@ import javafx.collections.FXCollections;
 import javafx.scene.control.TableView;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
+import java.util.ArrayList;
 import javafx.fxml.Initializable;
 
 public class advisorStudentSelectController implements Initializable{
@@ -33,6 +34,7 @@ public class advisorStudentSelectController implements Initializable{
     //These need to stay here so they can be edited by the add/remove student buttons.
     ObservableList<String> myStudents = FXCollections.observableArrayList();
     ObservableList<String> allStudents = FXCollections.observableArrayList();
+
 
     @FXML
     private Button logoutButton;
@@ -50,42 +52,67 @@ public class advisorStudentSelectController implements Initializable{
     private ChoiceBox myStudentsChoiceBox;
 
     @FXML
-    private ListView allStudentsList;
+    private ListView advisorAllStudents;
 
     @FXML
-    private ListView myStudentsList;
+    private ListView advisorMyStudents;
+
+    @FXML
+    private Button homeButton;
+
+    UserList userList = UserList.getInstance();
+    ArrayList<Student> myStudentsList = f.getAssignedStudents();
+    ArrayList<Student> allStudentsList = userList.getStudents();
+    
+
 
     @Override
     public void initialize(URL url, ResourceBundle rb)  {
-        displayAllStudentListView();
-        displayMyStudentListView();
-    }
 
-    public void displayAllStudentListView() {
-
-        for(Student student : UserList.getInstance();.getStudents()) {
+        //display all student list view
+        //--------------------------------
+        for(Student student : allStudentsList) {
             if(student != null){
-                //GETTING AN error here saying"this.allStudentsList is null"
-
-                System.out.println("student isnt null vscode idk what to tell you");
                 String name = student.getFirstName() + " " + student.getLastName();
                 allStudents.add(name);
             }
         }
-        allStudentsList.setItems(allStudents);
-        allStudentsChoiceBox.setItems(allStudents);
-    }
+        if(advisorAllStudents == null) {
+            System.out.println("allStudentsList is null");
+        }
+        else {
+            advisorAllStudents.setItems(allStudents);
+        }
 
-    public void displayMyStudentListView() {
+        if(allStudentsChoiceBox == null) {
+            System.out.println("allStudentsChoiceBox is null");
+        }
+        else {
+            allStudentsChoiceBox.setItems(allStudents);
+        }
 
-        for(Student student : f.getAssignedStudents()) {
+
+        //display my studeny list view 
+        //----------------------------------------
+        for(Student student : myStudentsList) {
             if(student != null){
-                String name = student.getFirstName() + student.getLastName();
+                String name = student.getFirstName() + " " + student.getLastName();
                 myStudents.add(name);
             }
         }
-        myStudentsList.setItems(myStudents);
-        myStudentsChoiceBox.setItems(myStudents);
+        if(advisorMyStudents == null) {
+            System.out.println("allStudentsList is null");
+        }
+        else {
+            advisorMyStudents.setItems(myStudents);
+        }
+
+        if(myStudentsChoiceBox == null) {
+            System.out.println("allStudentsChoiceBox is null");
+        }
+        else {
+            myStudentsChoiceBox.setItems(myStudents);
+        }
     }
 
     @FXML
@@ -94,16 +121,35 @@ public class advisorStudentSelectController implements Initializable{
     }
 
     @FXML
-    private void addStudentButtonClicked() throws IOException {
-        //Idk if this string cast will work or not. 
-        //Can't get past the error above in displayAllStudentListView().
-        allStudents.add((String)allStudentsChoiceBox.getValue());
+    private void homeButtonClicked() throws IOException {
+        App.setRoot("advisorScreen");
     }
 
     @FXML
-    private void removeStudentButtonClicked() throws IOException {
+     private void addStudentButtonClicked() throws IOException {
         //Idk if this string cast will work or not. 
-        //Can't get past the error above in displayAllStudentListView().
-        myStudents.remove((String)myStudentsChoiceBox.getValue());
-    }
+        //Can't get past the error above in displayAllStudentListView()
+            myStudents.add((String)allStudentsChoiceBox.getValue());
+            myStudentsChoiceBox.setItems(myStudents);
+            for(Student student : allStudentsList){
+                if(allStudentsChoiceBox.getValue().equals(student.getFirstName() + " " + student.getLastName())){
+                    f.addStudent(student);
+                }
+            }
+            
+     }
+    
+     @FXML
+     private void removeStudentButtonClicked() throws IOException {
+         //Idk if this string cast will work or not. 
+         //Can't get past the error above in displayAllStudentListView().
+         myStudents.remove((String)myStudentsChoiceBox.getValue());
+         myStudentsChoiceBox.setItems(myStudents);
+
+         for(Student student : myStudentsList){
+            if(myStudentsChoiceBox.getValue().equals(student.getFirstName() + " " + student.getLastName()) && student != null && myStudentsChoiceBox.getValue() != null){
+                f.removeStudent(student);
+            }
+        }
+     }
 }

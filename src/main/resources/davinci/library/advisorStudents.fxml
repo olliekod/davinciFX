@@ -37,9 +37,9 @@
             <Font name="Times New Roman" size="23.0" />
          </font>
       </Label>
-      <Button id="advisorAddStudentButton" fx:id="advisorAddStudentButton" layoutX="220.0" layoutY="223.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="112.0" text="Add Student" />
+      <Button id="advisorAddStudentButton" fx:id="advisorAddStudentButton" layoutX="220.0" layoutY="223.0" mnemonicParsing="false" onAction="#addStudentButtonClicked" prefHeight="26.0" prefWidth="112.0" text="Add Student" />
       <ListView id="advisorAllStudents" fx:id="advisorAllStudents" layoutX="11.0" layoutY="154.0" prefHeight="247.0" prefWidth="207.0" />
-      <Button id="advisorRemoveStudentButton" fx:id="advisorRemoveStudentButton" layoutX="636.0" layoutY="222.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Remove Student" />
+      <Button id="advisorRemoveStudentButton" fx:id="advisorRemoveStudentButton" layoutX="636.0" layoutY="222.0" mnemonicParsing="false" onAction="#removeStudentButtonClicked" prefHeight="26.0" prefWidth="110.0" text="Remove Student" />
       <Label layoutX="374.0" layoutY="123.0" prefHeight="36.0" prefWidth="130.0" text="My Students:">
          <font>
             <Font name="Times New Roman" size="23.0" />
@@ -48,6 +48,7 @@
       <Separator layoutX="331.0" layoutY="124.0" orientation="VERTICAL" prefHeight="280.0" prefWidth="11.0" />
       <ListView id="advisorMyStudents" fx:id="advisorMyStudents" layoutX="380.0" layoutY="155.0" prefHeight="247.0" prefWidth="207.0" />
       <ChoiceBox id="allStudentsChoiceBox" fx:id="allStudentsChoiceBox" layoutX="220.0" layoutY="185.0" prefHeight="25.0" prefWidth="111.0" />
-      <ChoiceBox id="myStudentsChoiceBox" fx:id="myStudentsChoiceBox1" layoutX="635.0" layoutY="186.0" prefHeight="25.0" prefWidth="111.0" />
+      <ChoiceBox id="myStudentsChoiceBox" fx:id="myStudentsChoiceBox" layoutX="635.0" layoutY="186.0" prefHeight="25.0" prefWidth="111.0" />
+      <Button id="homeButton" fx:id="homeButton" layoutX="11.0" layoutY="93.0" mnemonicParsing="false" onAction="#homeButtonClicked" text="Home" />
    </children>
 </AnchorPane>

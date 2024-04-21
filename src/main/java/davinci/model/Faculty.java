@@ -28,8 +28,9 @@ public class Faculty extends User{
         assignedStudents.add(student);
         DataWriter.saveFaculty(UserList.getFaculty());
     }
-    public void removeStudent(UUID id) {
-        // Remove student as advisee
+    public void removeStudent(Student student) {
+        assignedStudents.remove(student);
+        DataWriter.saveFaculty(UserList.getFaculty());
     }
     public void editStudent(Student student) {
         // This function is kinda vague.
