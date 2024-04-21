@@ -63,7 +63,7 @@ public class advisorStudentSelectController implements Initializable{
 
     public void displayAllStudentListView() {
 
-        for(Student student : UserList.getInstance();.getStudents()) {
+        for(Student student : UserList.getInstance().getStudents()) {
             if(student != null){
                 //GETTING AN error here saying"this.allStudentsList is null"
 
