@@ -146,10 +146,10 @@ public class advisorStudentSelectController implements Initializable{
          myStudents.remove((String)myStudentsChoiceBox.getValue());
          myStudentsChoiceBox.setItems(myStudents);
 
-         for(Student student : myStudentsList){
-            if(myStudentsChoiceBox.getValue().equals(student.getFirstName() + " " + student.getLastName()) && student != null && myStudentsChoiceBox.getValue() != null){
-                f.removeStudent(student);
-            }
+         for(int i = 0; i < myStudentsList.size(); i++){
+             if(myStudentsChoiceBox.getValue().equals(myStudentsList.get(i).getFirstName() + " " + myStudentsList.get(i).getLastName())){
+                 f.removeStudent(myStudentsList.get(i));
+             }
         }
      }
 }
