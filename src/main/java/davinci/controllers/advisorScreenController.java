@@ -6,8 +6,10 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 import davinci.library.App;
+import davinci.model.DataWriter;
 import davinci.model.Faculty;
 import davinci.model.Student;
+import davinci.model.UserList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -21,6 +23,9 @@ public class advisorScreenController implements Initializable {
 
 
     private Student selectedStudent;
+
+    @FXML
+    private Label selectedStudentLabel;
 
     @FXML
     private Button sendNoteButton;
@@ -83,6 +88,28 @@ public class advisorScreenController implements Initializable {
     private void myStudentsButtonClicked() throws IOException {
         App.setRoot("advisorStudents");
     }
+
+    @FXML
+    private void studentViewPressed() throws IOException {
+        selectedStudent = studentView.getSelectionModel().getSelectedItem();
+        selectedStudentLabel.setText(selectedStudent.toString());
+    }
+
+    @FXML
+    private void sendNoteButtonClicked() throws IOException {
+        String note = noteTextField.getText();
+        System.out.println(note);
+        if (note.length() == 0)
+            return;
+        
+        ArrayList<Student> students = UserList.getStudents();
+        students.remove(selectedStudent);
+
+        ArrayList<String> selectedStudentNotes = selectedStudent.getNotes();
+        selectedStudentNotes.add(note);
+        selectedStudent.setNotes(selectedStudentNotes);
+
+        students.add(selectedStudent);
+        DataWriter.saveStudents(students);
+    }
 }
-
-
