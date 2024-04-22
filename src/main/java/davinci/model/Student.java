@@ -65,6 +65,10 @@ public class Student extends User{
         return plan;
     }
 
+    public String toString() {
+        return this.getFirstName() + " "  + this.getLastName() + " - " + this.getStanding();
+    }
+
     public String calculateTotalCreditHours() {
         int totalCreditHours = 0;
 
