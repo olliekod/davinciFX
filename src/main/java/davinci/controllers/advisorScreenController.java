@@ -15,9 +15,18 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
 
 public class advisorScreenController implements Initializable {
 
+
+    private Student selectedStudent;
+
+    @FXML
+    private Button sendNoteButton;
+
+    @FXML
+    private TextField noteTextField;
 
     @FXML
     private Label nameLabel;
@@ -38,7 +47,7 @@ public class advisorScreenController implements Initializable {
     private Button homeButton;
 
     @FXML
-    private ListView<String> studentView;
+    private ListView<Student> studentView;
 
     private Faculty advisor;
 
@@ -51,9 +60,9 @@ public class advisorScreenController implements Initializable {
         emailLabel.setText(advisor.generateFacultyEmail());
         idLabel.setText(advisor.getID().toString());
 
-        ObservableList<String> studentList = FXCollections.observableArrayList();
+        ObservableList<Student> studentList = FXCollections.observableArrayList();
         for (Student student : advisor.getAssignedStudents()) {
-            studentList.add(student.getFirstName() + " " + student.getLastName());
+            studentList.add(student);
         }
 
         studentView.setItems(studentList);
